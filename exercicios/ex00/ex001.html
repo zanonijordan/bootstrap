@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>BootStrapp Class table</title>
+  <style>
+    body {
+      height: 100vh;
+      background-color: white;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .container {
+      background-color: white;
+      max-width: 700px;
+      padding: 10px;
+      margin: auto;
+      border: 1px solid darkblue;
+      border-radius: 15px;
+    }
+
+    h1 {
+      background-color: black;
+      color: white;
+      text-align: center;
+
+    }
+
+    h2 {
+      text-align: center;
+
+    }
+
+    caption {
+      font-size: 1.3em;
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+      border: 2px solid darkred;
+
+
+
+    }
+
+    .table {
+      color: green;
+      background-color: yellow;
+      max-width: 700px;
+      padding: 10px;
+      margin: auto;
+      border: 2px solid darkblue;
+      border-radius: 15px;
+      left: 50%;
+      top: 50%;
+
+    }
+
+    table {
+      text-align: center;
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 1px solid darkgray;
+      padding: 10px;
+    }
+
+    div#tabInt {
+      background-color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <hr size="5" noshade>
+  <header>
+
+    <h1>Hello World!</h1>
+  </header>
+  <div class="container">
+    <h2>Criando uma tabela</h2>
+    <div class="table">
+      <table>
+        <caption>Tabela Pessoas</caption>
+
+        <div class="tabInt">
+          <thead>
+            <th scope="col">Nome</th>
+            <th scope="col">Sobrenome</th>
+            <th scope="col">Idade</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jordan</td>
+              <td>Zanoni</td>
+              <td>idade</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <th scope="row" colspan="2">Total de nomes</th>
+            <td scope="col">1</td>
+             
+          </tfoot>
+
+        </div>
+        <tr>
+
+      </table>
+    </div>
+  </div>
+
+
+
+
+
+  <hr size="5" noshade>
+</body>
+
+</html>

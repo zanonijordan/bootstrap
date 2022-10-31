@@ -1,0 +1,229 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+:root{
+    --cor0:#F2EEAE;
+    --cor1:#f1da95;
+    --cor2:#F2B263;
+    --cor3:#A66946;
+    --cor4:#532B18;
+    --cor5:#341a0e;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-android: 'Android', cursive;
+
+}
+body {
+    background-color: var(--cor1);
+    font-family: var(--font-padrao);
+}
+*{
+  /*
+
+  Em HTML é id = em CSS é #
+  Em HTML é class = em CSS é .
+  */
+  /*
+      #id
+      . = class
+      : = pseudo class
+      :: = pseudo element
+      > = children
+  */
+  background-image: url('imagens/target001.png');
+  background-image: linear-gradient(to right, #188C77,#D517DB,#0FD9B3);
+
+  background-size: 100% 100%;
+  background-size: 150px 150px;
+  background-size: cover;
+
+  background-color: purple;
+  background-color: rgb(186, 231, 240);
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed ;
+
+  /* shorthand - background
+  color > image > position > repeat> [size]
+  > attachment
+  */
+
+
+  /* short-hand font
+  - font-style -> font-wight -> font-size -> font-family*/
+  /*
+      tipos de formatos
+      - opentype (otf)
+      - truetype (ttf)
+      - embedded-opentype
+      - truetype-aat (appel advanced Typography)
+       - svg
+  */
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: underline;
+
+  font-weight: bold;
+  font-weight: normal;
+  font-style: normal;
+  font: bold 2em 'work sans';
+  font: bolder 4em 'blackside', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: blue;
+  color: rgb(226, 189, 24);
+
+  display: inline-block;
+
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.376);
+
+  padding: 10px 10px 10px 10px;
+
+  margin:  auto;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  position: relative;
+  position: absolute;
+  position: sticky;
+
+  max-height: none;
+  height: 200px;
+
+  width: 400px;
+  max-width: 700px;
+
+  left: 50%;
+  top: 50%;
+  top: -1px;
+
+  transform: translate(-50%, -50%);
+
+  border: 1px solid darkblue;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 10px;
+
+  width: 600px;
+  padding: 10px;
+  margin: auto;
+
+  outline-width: 5px;
+  outline-style: dashed;
+  outline-color: red;
+
+
+}
+nav{
+    background-color: beige;
+    padding: 2px;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.376);
+}
+nav > a {
+    text-decoration: none;
+    color: rgb(34, 8, 227);
+    font-weight: bold;
+    margin-right: 30px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+
+div#bola{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited{
+    color: darkred;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+a:active{
+    color: yellow;
+}
+a::before{
+    content: '=>';
+}
+a::after{
+    content: '[link]';
+    text-decoration: none;
+    font-weight: normal;
+    color: darkgrey;
+}
+a.externo::after{
+    content: '\00A0\1F517';
+}
+div > p{
+    display: none;
+}
+div:hover > p{
+    display: block;
+    color: white;
+    background-color: red;
+    width: 300px;
+    font-weight: bold;
+
+}
+div:hover{
+    color: rebeccapurple;
+}
+div.video iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+tbody tr:nth-child(odd){ /* 2n-1 */
+  <!--
+      Anatomia para tabelas grandes
+      table
+          capition
+          thread
+              tr, td, th
+          tbody
+              tr, td, th
+          tfoot
+              tr, td, th
+  -->
+    background-color: lightblue;
+
+}
+tbody tr:nth-child(even){/* 2n */
+    background-color: lightyellow;
+
+}
+td.num {
+    text-align: right;
+}
+  clear: right;
+    float: left;
+    text-align: left;
+    line-height: 2; // nao e necessrio medidas
